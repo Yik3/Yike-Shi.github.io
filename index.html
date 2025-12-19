@@ -1,46 +1,58 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人主页 | Your Name</title>
+    <title>Personal Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <button id="lang-btn" class="lang-toggle">切换中文</button>
+
     <div class="container">
         <aside class="sidebar">
-            <div class="profile-section">
-                <img src="https://via.placeholder.com/150" alt="My Photo" class="avatar">
+            <div class="profile-area">
+                <img src="YikeShi_Headshot.jpg" alt="My Photo" class="avatar">
             </div>
             
             <nav class="nav-links">
-                <ul>
-                    <li><a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                <ul class="lang-en">
+                    <li><a href="https://linkedin.com/in/yike-shi2004" target="_blank">LinkedIn</a></li>
                     <li><a href="resume.pdf" target="_blank">Resume</a></li>
                     <li><a href="robotics-story.html">My Robotics Story</a></li>
                     <li><a href="research.html">My Research</a></li>
+                    <li><a href="research.html">Teaching and Leadership</a></li>
+                </ul>
+                <ul class="lang-zh" style="display: none;">
+                    <li><a href="https://linkedin.com/in/yourprofile" target="_blank">领英 (LinkedIn)</a></li>
+                    <li><a href="resume-zh.pdf" target="_blank">个人简历</a></li>
+                    <li><a href="robotics-story-zh.html">我的机器人故事</a></li>
+                    <li><a href="research-zh.html">我的研究项目</a></li>
                 </ul>
             </nav>
         </aside>
 
         <main class="main-content">
-            <section class="bio">
-                <h1>你好，我是 [你的名字]</h1>
+            <div class="lang-en">
+                <h1>Hi, I'm Yike</h1>
                 <div class="bio-text">
-                    <p>
-                        这里是你的自我介绍第一段。你可以聊聊你目前所在的学校、研究方向，或者你对机器人技术（Robotics）的热情起源。
-                    </p>
-                    <p>
-                        这里是第二段。详细描述一下你的研究重点，比如机器视觉、运动规划或是人机交互。分享一下你解决过的有趣问题。
-                    </p>
-                    <p>
-                        第三段可以写写你的业余爱好，或者你对未来的展望。
-                    </p>
+                    <p>Welcome to my personal website. I am currently a junior Computer Engineering Student at <em><b>University of California, Los Angeles (UCLA)</b></em>. As a Researcher,  I am passionate about Robotics and AI. I am supervised by Dr. <a href="https://yuchencui.cc/" target="_blank" class="name-link">Yuchen Cui</a> at UCLA Robot Intelligence Lab (<a href="https://ucla-robot-intelligence-lab.github.io/" target="_blank" class="name-link">URIL</a>).</p>
+                    <p>Currently, I am working on long-horizon robotics imitation learning from different inputs with complex hardware. Check Research Part for details!</p>
+                    <p>You can reach me at <em><b>yikeshi9248 [at] ucla.edu</b></em>. Also check my coursework and education story <a href="https://yuchencui.cc/" target="_blank" class="name-link">here</a>.</p>
                 </div>
-            </section>
+            </div>
+
+            <div class="lang-zh" style="display: none;">
+                <h1>你好，我是石逸可</h1>
+                <div class="bio-text">
+                    <p>欢迎来到我的个人主页。我是一名对机器人和人工智能充满热情的科研工作者。</p>
+                    <p>目前，我正致力于长程任务和模仿学习的研究。</p>
+                </div>
+            </div>
         </main>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
