@@ -1,0 +1,216 @@
+/* Education History Page Specific Styles */
+
+/* Timeline Styles */
+.timeline {
+    margin: 40px 0;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.timeline-year {
+    flex: 0 0 150px;
+    font-weight: 600;
+    color: #3d7ed9;
+    font-size: 1.2rem;
+}
+
+.timeline-content {
+    flex: 1;
+}
+
+.timeline-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.4rem;
+}
+
+.timeline-content .institution {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.timeline-content ul {
+    margin-left: 20px;
+    color: #444;
+}
+
+.timeline-content li {
+    margin-bottom: 8px;
+}
+
+/* Courses Section */
+.courses-section {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid #eee;
+}
+
+.courses-section h2 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.course-category {
+    margin-bottom: 40px;
+}
+
+.course-category h3 {
+    color: #3d7ed9;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.course-item {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #3d7ed9;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.course-item strong {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Skills Section */
+.skills-section {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid #eee;
+}
+
+.skills-section h2 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.skill-category {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.skill-category h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #444;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background-color: #e9f2ff;
+    color: #3d7ed9;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.skill-tag:hover {
+    background-color: #3d7ed9;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 24px;
+    background-color: #3d7ed9;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+    background-color: #2c5fb4;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design for Education Page */
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+    }
+    
+    .timeline-year {
+        margin-bottom: 15px;
+        flex: none;
+    }
+    
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-content {
+        padding: 40px 30px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.timeline-item, .course-category, .skill-category {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.timeline-item:nth-child(2) { animation-delay: 0.2s; }
+.course-category:nth-child(1) { animation-delay: 0.3s; }
+.course-category:nth-child(2) { animation-delay: 0.4s; }
+.course-category:nth-child(3) { animation-delay: 0.5s; }
+.skill-category:nth-child(1) { animation-delay: 0.6s; }
+.skill-category:nth-child(2) { animation-delay: 0.7s; }
+.skill-category:nth-child(3) { animation-delay: 0.8s; }
