@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Yike Shi</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="lang-btn" class="lang-toggle">切换中文</button>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-area">
+                <img src="../YikeShi_Headshot.jpg" alt="My Photo" class="avatar">
+            </div>
+            
+            <nav class="nav-links">
+                <ul class="lang-en">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="https://linkedin.com/in/yike-shi2004" target="_blank">LinkedIn</a></li>
+                    <li><a href="../resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="../education/">Education History</a></li>
+                    <li><a href="../robotics/">Robotics Story</a></li>
+                    <li><a href="./">Research</a></li>
+                    <li><a href="../teaching/">Teaching and Leadership</a></li>
+                </ul>
+                <ul class="lang-zh" style="display: none;">
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="https://linkedin.com/in/yike-shi2004" target="_blank">领英</a></li>
+                    <li><a href="../resume.pdf" target="_blank">个人简历</a></li>
+                    <li><a href="../education/">教育经历</a></li>
+                    <li><a href="../robotics/">机器人故事</a></li>
+                    <li><a href="./">研究项目</a></li>
+                    <li><a href="../teaching/">教学与领导力</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="lang-en">
+                <h1>Research Projects</h1>
+                
+                <div class="research-intro">
+                    <p class="intro-text">My research journey spans both robotics and AI security, exploring the intersection of intelligent systems, security, and privacy. Currently, I'm focusing on making robotic systems more capable through advanced imitation learning techniques while also investigating security vulnerabilities in AI systems.</p>
+                </div>
+                
+                <div class="lab-section">
+                    <div class="lab-header">
+                        <div class="lab-logo">🤖</div>
+                        <div class="lab-info">
+                            <h2>UCLA Robot Intelligence Lab (URIL)</h2>
+                            <p class="lab-description">Directed by Professor <a href="https://yuchencui.cc/" target="_blank" class="prof-link">Yuchen Cui</a>, URIL focuses on imitation learning, reinforcement learning, and human-robot interaction for complex robotic systems.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h3>Learning where to look: Gaze-Guided Active Perception for Long-Horizon Imitation Learning</h3>
+                            <div class="project-tags">
+                                <span class="tag">Imitation Learning</span>
+                                <span class="tag">Gaze Tracking</span>
+                                <span class="tag">Computer Vision</span>
+                                <span class="tag">Robotics</span>
+                            </div>
+                            <p class="project-description">Developing gaze-guided active perception methods to improve long-horizon imitation learning by inferring human visual intent and dynamically decomposing complex tasks.</p>
+                            <div class="project-details">
+                                <h4>Key Contributions:</h4>
+                                <ul>
+                                    <li>Utilized Meta Aria as a gaze tracking system and collaborated on homography-based and LightGlue+RNN transformer methods for translating human perspective to machine perspective</li>
+                                    <li>Architected a probabilistic gaze prediction model using MDN, GMM, and UNet to infer human visual intent</li>
+                                    <li>Trained a gaze-centric skill selector using LSTM that dynamically chooses robot skills at inference time</li>
+                                    <li>Improved long-horizon tasks' success rates by 16% through foveated vision model implementation</li>
+                                    <li>Presented research at Meta's Research Summit for Egocentric Perception 2025 and UCLA Research Symposium</li>
+                                </ul>
+                            </div>
+                            <div class="project-details">
+                                <h4>Technical Details:</h4>
+                                <ul>
+                                    <li><strong>Foveated Vision Model:</strong> Applies Gaussian noise and reduces intensity to visual data outside human gaze point to simulate attention</li>
+                                    <li><strong>System Integration:</strong> Assembled URIL ACT ALOHA bimanual teleoperation hardware system with ROS+OpenCV real-time data pipeline</li>
+                                    <li><strong>Architecture Adaptation:</strong> Adapted ALOHA's ACT Architecture and benchmarked SOTA IL policies (Vanilla BC, Diffusion Policy, ACT)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <h3>Multi-sensory Electronics-integrated Robotic Limb for Intelligent manipulation (MERLIN)</h3>
+                            <div class="project-tags">
+                                <span class="tag">Dexterous Manipulation</span>
+                                <span class="tag">Sensor Integration</span>
+                                <span class="tag">Collaborative Robotics</span>
+                                <span class="tag">Data Collection</span>
+                            </div>
+                            <p class="project-description">Co-initiating a collaboration between URIL and RoMeLa to develop a high-quality dexterous-hand data-collection system with joint sensors, cameras, and tactile sensing.</p>
+                            <div class="project-details">
+                                <h4>Key Contributions:</h4>
+                                <ul>
+                                    <li>Co-initiated MERLIN as a collaboration between URIL and RoMeLa (Robotics Mechanism Laboratory)</li>
+                                    <li>Co-designed a high-quality dexterous-hand data-collection glove with joint sensors, cameras, and tactile sensing</li>
+                                    <li>Integrated and extended Python APIs on ROHand platform to replay and visualize data from the prototype glove</li>
+                                    <li>Collecting dexterous hand demonstrations with MERLIN and DexUMI and training imitation policies to compare performance across data-collection modalities</li>
+                                </ul>
+                            </div>
+                            <div class="project-details">
+                                <h4>Project Goals:</h4>
+                                <ul>
+                                    <li>Create comprehensive dataset of dexterous manipulation tasks</li>
+                                    <li>Compare performance of different data-collection modalities (MERLIN vs DexUMI)</li>
+                                    <li>Develop robust imitation learning policies for complex manipulation tasks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lab-section">
+                    <div class="lab-header">
+                        <div class="lab-logo">🔒</div>
+                        <div class="lab-info">
+                            <h2>UCLA Security and Privacy Lab</h2>
+                            <p class="lab-description">Directed by Prof. <a href="https://www.ytian.info/" target="_blank" class="prof-link">Yuan Tian</a> Focusing on developing secure intelligent systems and investigating vulnerabilities in AI/ML systems, particularly in the context of adversarial attacks and LLM security.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h3>Adversarial Attack and Defense on Images</h3>
+                            <div class="project-tags">
+                                <span class="tag">Adversarial ML</span>
+                                <span class="tag">Computer Vision</span>
+                                <span class="tag">Security</span>
+                                <span class="tag">Defense Mechanisms</span>
+                            </div>
+                            <p class="project-description">Investigating adversarial attacks on image classification and text-to-image generation models, and developing defense mechanisms to protect against malicious manipulations.</p>
+                            <div class="project-details">
+                                <h4>Key Contributions:</h4>
+                                <ul>
+                                    <li>Tested gradient matching & ascent algorithms to introduce unwanted results for image classification models</li>
+                                    <li>Researched the effects of Encoder and Diffusion Attack on text-to-image generation models</li>
+                                    <li>Trained a protection model adding 1.6% perturbation to an image and prevented malicious generation on the targeted image</li>
+                                </ul>
+                            </div>
+                            <div class="project-details">
+                                <h4>Research Focus:</h4>
+                                <ul>
+                                    <li><strong>Attack Methods:</strong> Gradient-based attacks on classification models, encoder/diffusion attacks on generative models</li>
+                                    <li><strong>Defense Strategies:</strong> Adversarial training, input perturbation for protection</li>
+                                    <li><strong>Impact:</strong> Preventing malicious content generation in text-to-image systems</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <h3>Security Flaws in Translation: A Study of Prompt Injection in LLM Translators</h3>
+                            <div class="project-tags">
+                                <span class="tag">LLM Security</span>
+                                <span class="tag">Prompt Injection</span>
+                                <span class="tag">Vulnerability Analysis</span>
+                                <span class="tag">Defense Mechanisms</span>
+                            </div>
+                            <p class="project-description">Conducting security evaluation of prompt injection vulnerabilities in LLM-based translation systems and developing detection/defense mechanisms.</p>
+                            <div class="project-details">
+                                <h4>Key Contributions:</h4>
+                                <ul>
+                                    <li>Conducted a security evaluation of prompt injection vulnerabilities in RedNote's LLM-based translation mode</li>
+                                    <li>Engineered automated data collection scrapers to gather injection prompts from comments on test posts</li>
+                                    <li>Developed a Gemini-based analysis pipeline utilizing 3/4 of manual data for few-shot prompt analysis</li>
+                                    <li>Investigated detection and defense mechanisms by performing attention analysis on malicious prompts</li>
+                                </ul>
+                            </div>
+                            <div class="project-details">
+                                <h4>Methodology:</h4>
+                                <ul>
+                                    <li><strong>Data Collection:</strong> Automated scraping of injection prompts from social media/test platforms</li>
+                                    <li><strong>Analysis Pipeline:</strong> Gemini-based system for few-shot prompt analysis and classification</li>
+                                    <li><strong>Defense Research:</strong> Attention analysis to understand and mitigate prompt injection attacks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="publications-section">
+                    <h2>Publications</h2>
+                    <div class="publications-list">
+                        <div class="publication-item">
+                            <div class="pub-year">2023</div>
+                            <div class="pub-content">
+                                <h3>A robust and novel semantic segmentation deep neural network for robotic surgery vision with a single RGB camera</h3>
+                                <p class="pub-authors"><strong>Shi, Y.</strong></p>
+                                <p class="pub-venue">In Third International Conference on Artificial Intelligence and Computer Engineering (ICAICE 2022) (Vol. 12610, pp. 73-77). SPIE.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="research-navigation">
+                    <a href="../robotics/" class="nav-button prev-button">← Robotics Story</a>
+                    <a href="../teaching/" class="nav-button next-button">Teaching & Leadership →</a>
+                </div>
+            </div>
+
+            <div class="lang-zh" style="display: none;">
+                <h1>研究项目</h1>
+                
+                <div class="research-intro">
+                    <p class="intro-text">我的研究领域涵盖机器人与网络安全，探索智能系统、安全与隐私的交叉点。目前，我专注于通过先进的模仿学习技术提升机器人系统的能力，同时研究人工智能系统的安全漏洞。</p>
+                </div>
+                
+                <div class="lab-section">
+                    <div class="lab-header">
+                        <div class="lab-logo">🤖</div>
+                        <div class="lab-info">
+                            <h2>UCLA 机器人智能实验室 (URIL)</h2>
+                            <p class="lab-description">由 <a href="https://yuchencui.cc/" target="_blank" class="prof-link">崔雨晨</a> 教授指导，URIL专注于复杂机器人系统的模仿学习、强化学习和人机交互。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="projects-grid">
+                        <div class="project-card">
+                    
+                            <h3>学习注视点：用于长程模仿学习的视线引导主动感知</h3>
+                            <div class="project-tags">
+                                <span class="tag">模仿学习</span>
+                                <span class="tag">视线追踪</span>
+                                <span class="tag">计算机视觉</span>
+                                <span class="tag">机器人学</span>
+                            </div>
+                            <p class="project-description">开发视线引导的主动感知方法，通过推断人类视觉意图和动态分解复杂任务来改进长程模仿学习。</p>
+                            <div class="project-details">
+                                <h4>主要贡献：</h4>
+                                <ul>
+                                    <li>使用Meta Aria作为视线追踪系统，并合作开发了基于单应性和LightGlue+RNN transformer的方法，将人类视角转换为机器视角</li>
+                                    <li>构建了使用MDN、GMM和UNet的概率视线预测模型来推断人类视觉意图</li>
+                                    <li>训练了基于LSTM的视线中心技能选择器，在推理时动态选择机器人技能</li>
+                                    <li>通过实施中央凹视觉模型，将长程任务的成功率提高了16%</li>
+                                    <li>在Meta 2025年自我中心感知研究峰会和UCLA研究研讨会上展示了研究成果</li>
+                                </ul>
+                            </div>
+                            <div class="project-details">
+                                <h4>技术细节：</h4>
+                                <ul>
+                                    <li><strong>中央凹视觉模型：</strong> 在人类注视点外的视觉数据上应用高斯噪声并降低强度以模拟注意力</li>
+                                    <li><strong>系统集成：</strong> 组装了URIL ACT ALOHA双手遥操作硬件系统，配备ROS+OpenCV实时数据管道</li>
+                                    <li><strong>架构适配：</strong> 适配了ALOHA的ACT架构，并对SOTA IL策略（Vanilla BC、Diffusion Policy、ACT）进行了基准测试</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            
+                            <h3>用于智能操作的多感官电子集成机器人肢体 (MERLIN)</h3>
+                            <div class="project-tags">
+                                <span class="tag">灵巧操作</span>
+                                <span class="tag">传感器集成</span>
+                                <span class="tag">协作机器人</span>
+                                <span class="tag">数据收集</span>
+                            </div>
+                            <p class="project-description">共同发起URIL和RoMeLa之间的合作，开发具有关节传感器、摄像头和触觉感知的高质量灵巧手数据收集系统。</p>
+                            <div class="project-details">
+                                <h4>主要贡献：</h4>
+                                <ul>
+                                    <li>共同发起了URIL和RoMeLa（机器人机构实验室）之间的MERLIN合作项目</li>
+                                    <li>共同设计了具有关节传感器、摄像头和触觉感知的高质量灵巧手数据采集手套</li>
+                                    <li>在ROHand平台上集成和扩展了Python API，以回放和可视化来自原型手套的数据</li>
+                                    <li>使用MERLIN和DexUMI收集灵巧手演示数据，并训练模仿策略以比较不同数据采集模式的性能</li>
+                                </ul>
+                            </div>
+                            <div class="project-details">
+                                <h4>项目目标：</h4>
+                                <ul>
+                                    <li>创建灵巧操作任务的全面数据集</li>
+                                    <li>比较不同数据采集模式（MERLIN与DexUMI）的性能</li>
+                                    <li>为复杂操作任务开发稳健的模仿学习策略</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lab-section">
+                    <div class="lab-header">
+                        <div class="lab-logo">🔒</div>
+                        <div class="lab-info">
+                            <h2>UCLA 安全与隐私实验室</h2>
+                            <p class="lab-description">由 <a href="https://www.ytian.info/" target="_blank" class="prof-link">田园</a>教授指导，专注于开发安全的智能系统，并研究AI/ML系统中的漏洞，特别是在对抗性攻击和LLM安全方面。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="projects-grid">
+                        <div class="project-card">
+                           
+                            <h3>图像对抗攻击与防御</h3>
+                            <div class="project-tags">
+                                <span class="tag">对抗性机器学习</span>
+                                <span class="tag">计算机视觉</span>
+                                <span class="tag">安全</span>
+                                <span class="tag">防御机制</span>
+                            </div>
+                            <p class="project-description">研究图像分类和文本到图像生成模型的对抗性攻击，并开发防御机制以防范恶意操作。</p>
+                            <div class="project-details">
+                                <h4>主要贡献：</h4>
+                                <ul>
+                                    <li>测试了梯度匹配和上升算法，对图像分类模型引入不良结果</li>
+                                    <li>研究了编码器和扩散攻击对文本到图像生成模型的影响</li>
+                                    <li>训练了一个保护模型，对图像添加1.6%的扰动，防止了针对目标图像的恶意生成</li>
+                                </ul>
+                            </div>
+                            <div class="project-details">
+                                <h4>研究重点：</h4>
+                                <ul>
+                                    <li><strong>攻击方法：</strong> 基于梯度的分类模型攻击，生成模型的编码器/扩散攻击</li>
+                                    <li><strong>防御策略：</strong> 对抗训练，用于保护的输入扰动</li>
+                                    <li><strong>影响：</strong> 防止文本到图像系统中的恶意内容生成</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card">
+                            <h3>翻译中的安全漏洞：LLM翻译器中的提示注入研究</h3>
+                            <div class="project-tags">
+                                <span class="tag">LLM安全</span>
+                                <span class="tag">提示注入</span>
+                                <span class="tag">漏洞分析</span>
+                                <span class="tag">防御机制</span>
+                            </div>
+                            <p class="project-description">对基于LLM的翻译系统中的提示注入漏洞进行安全评估，并开发检测/防御机制。</p>
+                            <div class="project-details">
+                                <h4>主要贡献：</h4>
+                                <ul>
+                                    <li>对小红书基于LLM的翻译模式进行了提示注入漏洞的安全评估</li>
+                                    <li>设计了自动数据收集爬虫，从测试帖子的评论中收集注入提示</li>
+                                    <li>开发了基于Gemini的分析流程，利用3/4的手动数据进行少样本提示分析</li>
+                                    <li>通过对恶意提示进行注意力分析，研究了检测和防御机制</li>
+                                </ul>
+                            </div>
+                            <div class="project-details">
+                                <h4>方法论：</h4>
+                                <ul>
+                                    <li><strong>数据收集：</strong> 从社交媒体/测试平台自动爬取注入提示</li>
+                                    <li><strong>分析流程：</strong> 基于Gemini的系统，用于少样本提示分析和分类</li>
+                                    <li><strong>防御研究：</strong> 注意力分析以理解和减轻提示注入攻击</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="publications-section">
+                    <h2>发表论文</h2>
+                    <div class="publications-list">
+                        <div class="publication-item">
+                            <div class="pub-year">2023</div>
+                            <div class="pub-content">
+                                <h3>用于机器人手术视觉的鲁棒新颖语义分割深度神经网络（仅使用单个RGB相机）</h3>
+                                <p class="pub-authors"><strong>石逸可</strong></p>
+                                <p class="pub-venue">第三届人工智能与计算机工程国际会议 (ICAICE 2022) (Vol. 12610, pp. 73-77). SPIE.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="research-navigation">
+                    <a href="../robotics/" class="nav-button prev-button">← 机器人故事</a>
+                    <a href="../teaching/" class="nav-button next-button">教学与领导力 →</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
